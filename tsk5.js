@@ -13,7 +13,7 @@ function  calculateWatchTime( times ) {
         }
         // console.log(value)
         sum = sum + value;
-        console.log(sum)
+        // console.log(sum)
     }
    
     

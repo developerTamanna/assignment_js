@@ -13,7 +13,7 @@ function  calculateWatchTime( times ) {
          }
          // console.log(value)
          sum = sum + value;
-         console.log(sum)
+         // console.log(sum)
      }
     
      
@@ -23,5 +23,5 @@ function  calculateWatchTime( times ) {
      
      return { hours, minutes, second };
  }
- const result = calculateWatchTime([100, 3800, "90" ])
+ const result = calculateWatchTime([100, 3800])
  console.log(result);
