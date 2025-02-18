@@ -1,16 +1,27 @@
 
+
+
 function  calculateWatchTime( times ) {
-    // console.log(times);
-    const date = new Date(times)
-    console.log(date)
-}
-
-
-
-const result = calculateWatchTime=[100, 99, 119, 300]
-console.log(result);
-
-
-
-// const date = new Date('2062-10-9')
-// console.log(date)
+    if(!Array.isArray(times)){
+     return "Invalid"
+    }
+     // console.log(times);
+     let sum = 0
+     for(let value of times){
+         if( typeof value !=='number'){
+             return "Invalid"
+         }
+         // console.log(value)
+         sum = sum + value;
+         console.log(sum)
+     }
+    
+     
+     const hours = Math.floor(sum/3600)
+     const minutes = Math.floor((sum % 3600)/60)
+      const second = sum % 60;
+     
+     return { hours, minutes, second };
+ }
+ const result = calculateWatchTime([100, 3800, "90" ])
+ console.log(result);
