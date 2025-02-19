@@ -1,7 +1,7 @@
 
 function  validEmail( email ) {
     if(typeof email !=='string'){
-        return   "Invalid" 
+        return   "Invalid";
     }
     // console.log(email)
     let check = ".-_+@"

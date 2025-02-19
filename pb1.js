@@ -1,10 +1,10 @@
 
 function cashOut( money ) {
     if(typeof money !=='number' || money<0){
-        return "Invalid"
+        return "Invalid";
     }
     // console.log(money)
-    const totalTk = money * 1.75 / 100
+    const totalTk = money * 1.75 / 100;
     return totalTk;
 }
 

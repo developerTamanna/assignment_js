@@ -1,28 +1,28 @@
 
 function  electionResult( votes ) {
    if(!Array.isArray(votes)){
-    return  "Invalid"
+    return  "Invalid";
    }
     let mangoVote = 0;
     let bananaVote = 0;
-    for(item of votes){
+    for(let item of votes){
         // console.log(item)
         if(item === 'mango'){
-            mangoVote ++
+            mangoVote ++;
         }
         else if(item ==='banana'){
-            bananaVote ++
+            bananaVote ++;
         }
         
     }
     if(mangoVote > bananaVote){
-        return 'Mango'
+        return 'Mango';
     }
     else if(bananaVote > mangoVote){
-        return 'Banana'
+        return 'Banana';
     }
   else{
-    return 'Draw'
+    return 'Draw';
   }
 
 }

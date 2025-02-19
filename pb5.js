@@ -3,13 +3,13 @@
 
 function  calculateWatchTime( times ) {
     if(!Array.isArray(times)){
-     return "Invalid"
+     return "Invalid";
     }
      // console.log(times);
      let sum = 0
      for(let value of times){
          if( typeof value !=='number'){
-             return "Invalid"
+             return "Invalid";
          }
          // console.log(value)
          sum = sum + value;
@@ -23,5 +23,5 @@ function  calculateWatchTime( times ) {
      
      return { hours, minutes, second };
  }
- const result = calculateWatchTime([100, 3800])
- console.log(result);
+ const resultCalc = calculateWatchTime([100, 3800])
+ console.log(resultCalc);

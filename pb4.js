@@ -1,10 +1,10 @@
 
 function  isBestFriend( f1 , f2 ) {
 if(typeof f1 !=='object' || typeof f2 !== 'object'){
-    return "Invalid"
+    return "Invalid";
 }
 
-    if(f1.bestFriend===f2.roll && f2.bestFriend===f1.roll){
+    if(f1.bestFriend === f2.roll && f2.bestFriend === f1.roll){
         return true;
     }
     else{
@@ -18,4 +18,4 @@ const bestFriend = isBestFriend(
 { name: "kashem", roll: 1, bestFriend: 2 }
 
  );
-console.log(bestFriend)
+console.log(bestFriend);
